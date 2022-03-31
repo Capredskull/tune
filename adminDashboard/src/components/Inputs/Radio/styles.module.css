@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.container p {
+  margin: 0.5rem 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.container .radio_input span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=styles.module.css.map */

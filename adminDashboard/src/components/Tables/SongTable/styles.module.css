@@ -1,0 +1,62 @@
+.table_container {
+  border-radius: 1rem !important;
+}
+
+.table_container table thead {
+  background-color: var(--blue-black);
+}
+
+.table_container table thead th {
+  line-height: 3rem;
+  font-size: 1.4rem;
+  color: var(--white);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.table_container table tbody td {
+  font-size: 1.2rem;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.table_container table tbody td .edit_btn {
+  color: var(--blue-black);
+}
+
+.table_container table tbody td .edit_btn svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.table_container table tbody td .delete_btn {
+  color: var(--error);
+}
+
+.table_container table tbody td .delete_btn svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.table_container table tbody td .play_btn {
+  color: var(--primary);
+}
+
+.table_container table tbody td .play_btn svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.table_container table tbody td .song_img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.table_container .no_data_img {
+  width: 20rem;
+  margin-left: -25rem;
+}
+/*# sourceMappingURL=styles.module.css.map */

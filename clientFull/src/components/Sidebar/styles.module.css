@@ -1,0 +1,129 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24rem;
+  height: 100vh;
+  background: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1rem;
+  z-index: 100;
+}
+
+.container .progress_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10rem;
+}
+
+.container .logo_img {
+  width: 15rem;
+  margin: 2.5rem;
+}
+
+.container .menu_link {
+  color: var(--light-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.6rem 0;
+  border-radius: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container .menu_link svg,
+.container .menu_link img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.container .menu_link span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.container .menu_link:hover {
+  color: var(--white);
+}
+
+.container .create_playlist_btn {
+  color: var(--light-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 4rem 0 1rem 0;
+}
+
+.container .create_playlist_btn svg {
+  background-color: var(--light-white);
+  color: var(--black);
+  width: 2rem;
+  height: 2rem;
+  margin: 0 2rem;
+  padding: 0.5rem;
+}
+
+.container .create_playlist_btn span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.container .create_playlist_btn:hover {
+  color: var(--white);
+}
+
+.container .create_playlist_btn:hover svg {
+  background-color: var(--white);
+}
+
+.container .underline {
+  width: 90%;
+  margin: 1rem 5%;
+  height: 0.1rem;
+  background-color: var(--light-white);
+}
+
+.container .playlist_link {
+  color: var(--light-white);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.6rem 0 0.6rem 2rem;
+}
+
+.container .playlist_link:hover {
+  color: var(--white);
+}
+
+.container .active_menu {
+  color: var(--white);
+  background-color: var(--primaryHover);
+  border-right: 3px solid var(--primary);
+}
+
+.container .active_link {
+  color: var(--white);
+}
+/*# sourceMappingURL=styles.module.css.map */

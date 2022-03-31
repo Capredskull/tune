@@ -1,0 +1,44 @@
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#181E30 ;
+
+	.form_container {
+		position: relative;
+		width: 40rem;
+		border-radius: 1.5rem;
+		padding: 2rem;
+		background-color: #13192C;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		color: #fff;
+
+		.heading {
+			font-size: 2.5rem;
+			font-weight: 500;
+			text-align: center;
+			text-transform: capitalize;
+			text-decoration: underline;
+			margin-bottom: 1rem;
+		}
+
+		.input_container {
+			width: 100%;
+		}
+
+		.btn_wrapper {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 1.5rem;
+			button {
+				width: 15rem;
+			}
+		}
+	}
+}

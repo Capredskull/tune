@@ -1,0 +1,42 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: var(--blue-black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white);
+}
+
+.navbar .left p {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+  margin-right: 1rem;
+}
+
+.navbar .left svg {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+}
+/*# sourceMappingURL=styles.module.css.map */
