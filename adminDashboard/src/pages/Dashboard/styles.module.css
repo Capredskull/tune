@@ -60,7 +60,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-transform: capitalize;
-  color: var(--blue-black);
 }
 
 .container .body .table_wrap h1 svg {

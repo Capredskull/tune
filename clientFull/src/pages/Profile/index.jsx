@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { updateUser } from "../../redux/userSlice/apiCalls";
+import { updateUser,deleteUser } from "../../redux/userSlice/apiCalls";
 import Joi from "joi";
 import TextField from "../../components/Inputs/TextField";
 import Select from "../../components/Inputs/Select";
@@ -36,6 +36,7 @@ const Profile = () => {
 	});
 	const [errors, setErrors] = useState({});
 	const { user, updateUserProgress } = useSelector((state) => state.user);
+	//const  {duser,deleteUserProgress}  = useSelector((state) => state.duser)
 	const dispatch = useDispatch();
 	const history = useHistory();
 
@@ -59,7 +60,13 @@ const Profile = () => {
 		const res = await updateUser(payload, dispatch);
 		res && history.push("/home");
 	};
-
+	const handleUserDelete = (id) => {
+	        deleteUser(id, dispatch);
+			//once deleted push user back to signup
+			//history.push("/signup");
+		//window.location.href = "/signup";
+	};
+	
 	useEffect(() => {
 		if (user) {
 			const dk = {
@@ -151,9 +158,27 @@ const Profile = () => {
 						label="Update"
 						type="submit"
 						isFetching={updateUserProgress}
+
+					/>
+					<Button
+						label="delete"
+						
+						type="delete"
+						onClick={() => handleUserDelete(user._id)}
 					/>
 				</div>
+				{/* <div className={styles.submit_btn_wrapperNew}>
+					
+				</div> */}
+				
 			</form>
+			{/* <div className={styles.submit_btn_wrapperNew}>
+					<Button
+						label="delete"
+						type="delete"
+						onClick={() => handleUserDelete(user._id)}
+					/>
+				</div> */}
 		</div>
 	);
 };

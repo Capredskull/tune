@@ -7,7 +7,7 @@ export const userSlice = createSlice({
 		getUserProgress: false,
 		updateUserProgress: false,
 		likeSongProgress: false,
-		//deleteUserProgress: false,
+		deleteUserProgress: false,
 		error: false,
 	},
 	reducers: {
@@ -49,17 +49,17 @@ export const userSlice = createSlice({
 			state.likeSongProgress = false;
 			state.error = true;
 		},
-		// deleteUserStart: (state) => {
-		// 	state.isFetching = true;
-		// },
-		// deleteUserSuccess: (state, action) => {
-		// 	state.user = action.payload
-		// 	state.deleteUserProgress = true;
-		// },
-		// deleteUserFailure: (state) => {
-		// 	state.error = true;
-		// 	state.isFetching = false;
-		// },
+		deleteUserStart: (state) => {
+			state.isFetching = true;
+		},
+		deleteUserSuccess: (state, action) => {
+			state.user = state.user.filter((user) => user._id !== action.payload);
+			state.isFetching = false;
+		},
+		deleteUserFailure: (state) => {
+			state.error = true;
+			state.isFetching = false;
+		},
 	},
 });
 
@@ -69,9 +69,9 @@ export const {
 	getUserFailure,
 	updateUserStart,
 	updateUserSuccess,
-	//deleteUserStart,
-	//deleteUserSuccess,
-	//deleteUserFailure,
+	deleteUserStart,
+	deleteUserSuccess,
+	deleteUserFailure,
 	updateUserFailure,
 	likeSongStart,
 	likeSongSuccess,

@@ -1,7 +1,7 @@
 .container {
   height: 6rem;
   width: calc(100% - 28rem);
-  background: #13192C;
+  background: #181E30;
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +31,7 @@
 
 .container .left .icon :hover {
   scale: 1.3;
-  color: var(--primary);
+  color: #054f4e;
 }
 
 .container .left .icon svg {
@@ -114,6 +114,6 @@
 }
 
 .container .menu .options:hover {
-  background-color: var(--light-white);
+  background-color: var(--primaryHover);
 }
 /*# sourceMappingURL=styles.module.css.map */

@@ -29,31 +29,19 @@ export const updateUser = async (payload, dispatch) => {
 		return false;
 	}
 };
-// export const deleteUser = async (payload, dispatch) => {
-// 	dispatch(actions.updateUserStart());
-// 	try {
-// 		const url = apiUrl + `/users/${payload.id}`;
-// 		const { data } = await axiosInstance.put(url, payload.data);
-// 		dispatch(actions.updateUserSuccess(data.data));
-// 		toast.success(data.message);
-// 		return true;
-// 	} catch (error) {
-// 		dispatch(actions.getUserFailure());
-// 		return false;
-// 	}
-// };
-// export const deleteUser = async (id, dispatch) => {
-// 	dispatch(actions.deleteUserStart());
-// 	try {
-// 		const { data } = await axiosInstance.delete(`/user/${id}`);
-// 		dispatch(actions.deleteUserSuccess(id));
-// 		toast.success(data.message);
-// 		return true;
-// 	} catch (error) {
-// 		dispatch(actions.deleteUserFailure());
-// 		return false;
-// 	}
-// };
+export const deleteUser = async (id, dispatch) => {
+	dispatch(actions.deleteUserStart());
+	try {
+		const { data } = await axiosInstance.delete(apiUrl + `/users/${id}/delete`);
+		dispatch(actions.deleteUserSuccess(id));
+		toast.success(data.message);
+		return true;
+	} catch (error) {
+		dispatch(actions.deleteUserFailure());
+		return false;
+	}
+};
+
 
 export const likeSong = async (payload, dispatch) => {
 	dispatch(actions.likeSongStart());

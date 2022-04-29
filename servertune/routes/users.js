@@ -59,8 +59,8 @@ router.delete("/:id", [validateObjectId, admin], async (req, res) => {
 });
 
 //let users delete their account
-router.delete("/:id", [validateObjectId,auth], async (req, res) => {
-  await User.findByIdAndDelete(req.user.id);
+router.delete("/:id/delete", [validateObjectId,auth], async (req, res) => {
+  await User.findByIdAndDelete(req.params.id);
   res.status(200).send({ message: "Successfully deleted user." });
 });
 

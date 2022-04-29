@@ -136,19 +136,24 @@
   color: #1c5b5a;
   font-size: 1.2rem;
   margin: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 .audio_player .center .progress_container input {
   width: 50rem;
   height: 0.8rem;
-  background-color: #00CEC9;
+  margin-bottom: 2rem;
+  background: #00CEC9 !important;
+  color: #00CEC9 !important;
   border-radius: 0.8rem;
+  padding-bottom: 0.3rem;
 }
 
 .audio_player .center .progress_container input .progressBar {
   width: 50rem;
   height: 0.8rem;
-  background-color: #00CEC9;
+  background: #00CEC9;
+  color: #00CEC9;
   border-radius: 0.8rem;
 }
 

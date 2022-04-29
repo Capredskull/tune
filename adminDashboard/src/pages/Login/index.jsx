@@ -41,7 +41,7 @@ const Login = () => {
 		<div className={styles.container}>
 			<Paper className={styles.form_container}>
 				<form onSubmit={handleSubmit}>
-					<div className={styles.heading}>Login</div>
+					<div className={styles.heading}>ADMIN LOGIN</div>
 					<div className={styles.input_container}>
 						<TextField
 							name="email"

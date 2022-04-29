@@ -45,6 +45,13 @@ const AudioPlayer = () => {
 			audioRef.current.pause();
 		}
 	}, [currentSong]);
+	// //this part i added latest
+	// useEffect(() => {
+	//   if(currentSong.action === "next"){
+	// 	  audioRef.next.play();
+	//   }
+	// }, [currentSong]);
+	
 
 	useEffect(() => {
 		currentSong.action === "play" && startTimer();

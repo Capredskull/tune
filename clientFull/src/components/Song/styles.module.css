@@ -14,7 +14,7 @@
 }
 
 .song_container:hover {
-  background-color: var(--light-black);
+  background-color: var(--primaryHover);
 }
 
 .song_container .left {

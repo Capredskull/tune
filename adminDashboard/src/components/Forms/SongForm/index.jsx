@@ -16,6 +16,7 @@ const SongForm = () => {
 	const [data, setData] = useState({
 		name: "",
 		artist: "",
+		genre:"",
 		img: null,
 		song: null,
 		duration: 0,
@@ -34,6 +35,7 @@ const SongForm = () => {
 			setData({
 				name: song[0].name,
 				artist: song[0].artist,
+				genre: song[0].genre,
 				song: song[0].song,
 				img: song[0].img,
 			});
@@ -45,6 +47,7 @@ const SongForm = () => {
 		artist: Joi.string().required().label("Artist"),
 		img: Joi.string().required().label("Image"),
 		song: Joi.string().required().label("Song"),
+		genre: Joi.string().required().label("Genre"),
 		duration: Joi.number().required(),
 	};
 
@@ -101,6 +104,18 @@ const SongForm = () => {
 							handleErrorState={handleErrorState}
 							schema={schema.artist}
 							error={errors.artist}
+						/>
+					</div>
+					<div className={styles.input_container}>
+						<TextField
+							name="genre"
+							label="Genre"
+							handleInputState={handleInputState}
+							required={true}
+							value={data.genre}
+							handleErrorState={handleErrorState}
+							schema={schema.genre}
+							error={errors.genre}
 						/>
 					</div>
 					<div className={styles.file_container}>
