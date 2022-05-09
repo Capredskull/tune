@@ -1,1 +1,1 @@
-I will add readme soon :)
+There is no readme as of right now ==>Samyog

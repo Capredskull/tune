@@ -1,0 +1,16 @@
+.like_btn .like_filled {
+  color: var(--primary);
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.like_btn .like_outlined {
+  color: var(--light-white);
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.like_btn .like_outlined:hover {
+  color: var(--white);
+}
+/*# sourceMappingURL=styles.module.css.map */

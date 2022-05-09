@@ -1,0 +1,119 @@
+.container {
+  height: 6rem;
+  width: calc(100% - 28rem);
+  background: #181E30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem 0 26rem;
+  z-index: 99;
+}
+
+.container .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .left .icon {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.container .left .icon :hover {
+  scale: 1.3;
+  color: #054f4e;
+}
+
+.container .left .icon svg {
+  color: var(--white);
+  padding: 0.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+
+.container .right .profile_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  color: var(--white);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.container .right .profile_menu:hover {
+  background-color: var(--primary);
+}
+
+.container .right .profile_menu svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.container .right .profile_menu p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0.6rem;
+}
+
+.container .right .profile_menu svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.container .menu {
+  width: 20rem;
+  position: absolute;
+  padding: 0.5rem;
+  top: 5.4rem;
+  right: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--primaryHover);
+  z-index: 100;
+}
+
+.container .menu .options {
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.container .menu .options p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.container .menu .options svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.container .menu .options:hover {
+  background-color: var(--primaryHover);
+}
+/*# sourceMappingURL=styles.module.css.map */
